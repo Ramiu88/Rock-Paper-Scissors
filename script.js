@@ -1,3 +1,8 @@
+let humanScore = 0;
+let computerScore = 0;
+
+
+
 function getComputerChoice()
 {
     let choice = Math.random();
@@ -43,5 +48,19 @@ function getHumanChoice(choice)
 }
 
 
+function playRound()
+{
+    
+}
 
-console.log(getComputerChoice())
+
+
+
+
+
+
+
+
+
+
+
