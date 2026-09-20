@@ -48,8 +48,96 @@ function getHumanChoice(choice)
 }
 
 
-function playRound()
+function playRound(humanSelection, computerSelection)
 {
+
+    let result;
+
+    if(humanSelection == computerSelection)
+    {
+        result = "That's a tie!!!"
+    }
+    
+
+    if (humanSelection == "Rock")
+    {
+        if(computerSelection == "Scissors")
+        {
+            result = "You won! Rock beats Scissors"
+        }
+        else if(computerSelection == "Paper")
+        {
+            result = "You lose! Paper beats Rock"
+                    
+        }
+    }
+
+     if (humanSelection == "Paper")
+    {
+        if(computerSelection == "Scissors")
+        {
+            result = "You lose! Scissors beats Paper"
+        }
+        else if(computerSelection == "Rock")
+        {
+            result = "You won! Paper beats Rock"
+                    
+        }
+    }
+
+     if (humanSelection == "Scissors")
+    {
+        if(computerSelection == "Paper")
+        {
+            result = "You won! Scissors beats Paper"
+        }
+        else if(computerSelection == "Rock")
+        {
+            result = "You lose! Rock beats Scissors"
+                    
+        }
+    }
+
+    if (computerSelection == "Rock")
+    {
+        if(humanSelection == "Scissors")
+        {
+            result = "You won! Rock beats Scissors"
+        }
+        else if(computerSelection == "Paper")
+        {
+            result = "You lose! Paper beats Rock"
+                    
+        }
+    }
+
+     if (computerSelection == "Paper")
+    {
+        if(humanSelection == "Scissors")
+        {
+            result = "You lose! Scissors beats Paper"
+        }
+        else if(humanScoreSelection == "Rock")
+        {
+            result = "You won! Paper beats Rock"
+                    
+        }
+    }
+
+     if (computerSelection == "Scissors")
+    {
+        if(humanSelection == "Paper")
+        {
+            result = "You won! Scissors beats Paper"
+        }
+        else if(humanSelection == "Rock")
+        {
+            result = "You lose! Rock beats Scissors"
+                    
+        }
+    }
+
+    return result;
     
 }
 
