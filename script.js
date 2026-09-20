@@ -21,7 +21,23 @@ function getComputerChoice()
 
 function getHumanChoice(choice)
 {
+    let result;
 
+     if(choice.localCompare("Rock",undefined,{sensitivity : "base"}))
+     {
+        result = "Rock"
+     }
+     else if(choice.localCompare("Paper",undefined,{sensitivity : "base"}))
+     {
+        result = "Paper"
+     }
+
+     else if(choice.localCompare("Scissors",undefined,{sensitivity : "base"}))
+     {
+        result = "Scissors"
+     }
+
+     return result
 
    
 }
