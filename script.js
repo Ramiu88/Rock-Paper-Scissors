@@ -1,11 +1,11 @@
 function getComputerChoice()
 {
     let choice = Math.random();
-    if (choice == 0)
+    if (choice >=0 && choice <=0.3)
     {
         choice = "Rock"
     }
-    else if (choice > 0.5)
+    else if (choice > 0.3 && choice <= 0.6)
     {
         choice = "Paper"
     }
@@ -21,6 +21,8 @@ function getComputerChoice()
 
 function getHumanChoice(choice)
 {
+
+
    
 }
 
