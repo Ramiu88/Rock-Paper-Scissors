@@ -1,7 +1,3 @@
-let humanScore = 0;
-let computerScore = 0;
-
-
 
 function getComputerChoice()
 {
@@ -48,7 +44,18 @@ function getHumanChoice(choice)
 }
 
 
-function playRound(humanSelection, computerSelection)
+
+
+function playGame()
+{
+    let humanScore = 0;
+    let computerScore = 0;
+    let i = 0;
+
+
+    do {
+
+    function playRound(humanSelection, computerSelection)
 {
 
     let result;
@@ -151,6 +158,17 @@ function playRound(humanSelection, computerSelection)
 
     return result;
     
+}
+
+       
+
+        i++;
+    }
+    while (i < 5);
+
+
+
+
 }
 
 
