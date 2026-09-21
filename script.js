@@ -56,6 +56,8 @@ function playRound(humanSelection, computerSelection)
     if(humanSelection == computerSelection)
     {
         result = "That's a tie!!!"
+        humanScore++;
+        computerScore++;
     }
     
 
@@ -130,11 +132,27 @@ function playGame()
     
     result = playRound(humanSelection,computerSelection);
     console.log(result);
-       
+    
+    console.log("Your score is : " + humanScore);
+    console.log("Computer score is : " + computerScore);
+
+    
 
      i++;
     }
     while (i < 5);
+
+    if (humanScore > computerScore)
+    {
+        console.log("Congratulations YOU WON");
+    }
+    else if (computerScore > humanScore)
+    {
+        console.log("YOU LOST");
+    }
+    else {
+        console.log("DRAW");
+    }
 
 
 
