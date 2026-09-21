@@ -104,7 +104,7 @@ function playRound(humanSelection, computerSelection)
         }
     }
 
-            
+
 
     return result;
     
@@ -126,7 +126,6 @@ function playGame()
     do {
 
     computerSelection = getComputerChoice();
-    console.log("computer choice is : " + computerSelection)
     humanSelection = getHumanChoice();
     
     result = playRound(humanSelection,computerSelection);
