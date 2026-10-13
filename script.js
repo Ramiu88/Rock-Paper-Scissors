@@ -114,50 +114,12 @@ function playRound(humanSelection, computerSelection)
 
 
 
-function playGame()
-{
-    
-    let i = 0;
-    let humanSelection;
-    let computerSelection;
-    let result;
+
+const rockButton = document.querySelector(".rock");
+const paperButton = document.querySelector(".paper");
+const scissorsButton = document.querySelector(".scissors");
 
 
-
-
-    do {
-
-    computerSelection = getComputerChoice();
-    humanSelection = getHumanChoice();
-    
-    result = playRound(humanSelection,computerSelection);
-    console.log(result);
-    
-    console.log("Your score is : " + humanScore);
-    console.log("Computer score is : " + computerScore);
-
-    
-
-     i++;
-    }
-    while (i < 5);
-
-    if (humanScore > computerScore)
-    {
-        console.log("Congratulations YOU WON");
-    }
-    else if (computerScore > humanScore)
-    {
-        console.log("YOU LOST");
-    }
-    else {
-        console.log("DRAW");
-    }
-
-
-
-
-}
 
 
 
