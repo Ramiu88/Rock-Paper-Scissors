@@ -136,6 +136,28 @@ rockButton.addEventListener('click',function() {
     hscore.textContent = "Human score : " + humanScore;
     cscore.textContent = "Computer score : " + computerScore;
 
+    if(humanScore == 5)
+    {
+       alert("Human win");
+       humanScore = 0
+       computerScore = 0
+        
+    }
+
+    else  if (computerScore == 5){
+        alert("Computer win");
+        humanScore = 0
+        computerScore = 0
+    }
+     else if (computerScore == 5 && humanScore == 5)
+    {
+        alert("That a tie!!!");
+        humanScore = 0
+        computerScore = 0
+    }
+
+    
+
 
 
 
@@ -150,6 +172,29 @@ paperButton.addEventListener('click',function() {
     hscore.textContent = "Human score : " + humanScore;
     cscore.textContent = "Computer score : " + computerScore;
 
+    if(humanScore == 5)
+    {
+       alert("Human win");
+       humanScore = 0
+       computerScore = 0
+        
+    }
+
+    else  if (computerScore == 5){
+        alert("Computer win");
+        humanScore = 0
+        computerScore = 0
+    }
+
+    else if (computerScore == 5 && humanScore == 5)
+    {
+        alert("That a tie!!!");
+        humanScore = 0
+        computerScore = 0
+    }
+
+  
+
 
 
 });
@@ -162,6 +207,28 @@ scissorsButton.addEventListener('click',function() {
     divDisplay.textContent = result;
     hscore.textContent = "Human score : " + humanScore;
     cscore.textContent = "Computer score : " + computerScore;
+
+    if(humanScore == 5)
+    {
+       alert("Human win");
+       humanScore = 0
+       computerScore = 0
+        
+    }
+
+    else  if (computerScore == 5){
+        alert("Computer win");
+        humanScore = 0
+        computerScore = 0
+    }
+     else if (computerScore == 5 && humanScore == 5)
+    {
+        alert("That a tie!!!");
+        humanScore = 0
+        computerScore = 0
+    }
+
+   
 
 });
 
