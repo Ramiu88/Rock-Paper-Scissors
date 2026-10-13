@@ -121,6 +121,10 @@ const rockButton = document.querySelector(".rock");
 const paperButton = document.querySelector(".paper");
 const scissorsButton = document.querySelector(".scissors");
 const divDisplay = document.querySelector(".display");
+const hscore = document.querySelector(".human-score");
+const cscore = document.querySelector(".computer-score");
+
+
 
 
 
@@ -129,6 +133,8 @@ rockButton.addEventListener('click',function() {
     let result = playRound("Rock",getComputerChoice())
 
     divDisplay.textContent = result;
+    hscore.textContent = "Human score : " + humanScore;
+    cscore.textContent = "Computer score : " + computerScore;
 
 
 
@@ -141,6 +147,8 @@ paperButton.addEventListener('click',function() {
     let result = playRound("Rock",getComputerChoice())
 
     divDisplay.textContent = result;
+    hscore.textContent = "Human score : " + humanScore;
+    cscore.textContent = "Computer score : " + computerScore;
 
 
 
@@ -152,6 +160,8 @@ scissorsButton.addEventListener('click',function() {
     let result = playRound("Rock",getComputerChoice())
 
     divDisplay.textContent = result;
+    hscore.textContent = "Human score : " + humanScore;
+    cscore.textContent = "Computer score : " + computerScore;
 
 });
 
