@@ -1,3 +1,5 @@
+
+
 let humanScore = 0
 let computerScore = 0
 
@@ -118,11 +120,16 @@ function playRound(humanSelection, computerSelection)
 const rockButton = document.querySelector(".rock");
 const paperButton = document.querySelector(".paper");
 const scissorsButton = document.querySelector(".scissors");
+const divDisplay = document.querySelector(".display");
+
 
 
 rockButton.addEventListener('click',function() {
  
-    console.log(playRound("Rock",getComputerChoice()))
+    let result = playRound("Rock",getComputerChoice())
+
+    divDisplay.textContent = result;
+
 
 
 
@@ -131,7 +138,9 @@ rockButton.addEventListener('click',function() {
 
 paperButton.addEventListener('click',function() {
  
-    console.log(playRound("Paper",getComputerChoice()))
+    let result = playRound("Rock",getComputerChoice())
+
+    divDisplay.textContent = result;
 
 
 
@@ -140,11 +149,19 @@ paperButton.addEventListener('click',function() {
 
 scissorsButton.addEventListener('click',function() {
  
-    console.log(playRound("Scissors",getComputerChoice()))
+    let result = playRound("Rock",getComputerChoice())
 
-
+    divDisplay.textContent = result;
 
 });
+
+
+
+
+
+
+
+
 
 
 
